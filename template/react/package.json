@@ -1,0 +1,14 @@
+{
+  "name": "__APP_NAME__",
+  "version": "0.0.1",
+  "description":"create react app with saza",
+  "private": true,
+  "dependencies": {
+    
+  },
+  "scripts": {
+    "start": "webpack serve --port 3000", 
+    "dev":"start",
+    "build": "set NODE_ENV=production && webpack"
+  }
+}

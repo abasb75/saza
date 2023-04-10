@@ -1,0 +1,10 @@
+{
+    "name": "saza",
+    "version": "0.0.1",
+    "description": "create react app with saza",
+    "repository": "git+https://github.com/abasb75/saza",
+    "license": "MIT",
+    "bin": {
+        "saza": "./index.js"
+    }
+}
