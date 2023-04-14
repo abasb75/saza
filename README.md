@@ -55,3 +55,5 @@ npm run build
 <p><a href="https://dev.to/brandonwie/the-complete-guide-for-setting-up-react-app-from-scratch-feat-typescript-385b">https://dev.to/brandonwie/the-complete-guide-for-setting-up-react-app-from-scratch-feat-typescript-385b</a></p>
 
 
+<b>GET / : * problem :</b>
+<p><a href="https://stackoverflow.com/questions/71602863/webpack-dev-server-cannot-get">https://stackoverflow.com/questions/71602863/webpack-dev-server-cannot-get</a></p>
