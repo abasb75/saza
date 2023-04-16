@@ -1,5 +1,6 @@
 <p>how to create saza app :</p>
 
+## Quick Start
 ```sh
 
 npm i -g saza
@@ -7,7 +8,8 @@ saza my-app-name
 
 ```
 
-for typescript :
+for start typescript app:
+
 ```sh
 
 npm i -g saza
@@ -24,7 +26,7 @@ npx my-app-name --typescript
 ```
 
 
-for dev live server :
+for start live server for developing app :
 ```sh
 
 npm run start
@@ -37,6 +39,38 @@ build production from saza app :
 npm run build
 
 ```
+
+## work with SVG files
+
+1. import source of ```svg``` file and use ```<img src={svgSource}```  like below :
+
+```javascript
+
+import svgSource from "./icon.svg";
+
+function App() {
+  return (<>
+    <img src={svgSource} />
+  </>);
+}
+
+export default App;
+```
+
+2. import ```svg``` as a ```ReactComponent``` :
+
+```javascript
+import {ReactComponent as Icon} from "./icon.svg";
+
+function App() {
+  return (<>
+    <Icon />
+  </>);
+}
+
+export default App;
+```
+
 
 
 

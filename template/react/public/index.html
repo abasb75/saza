@@ -5,9 +5,19 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>SAZA for React</title>
+  <!-- css styles -->
+  <% for (var index in htmlWebpackPlugin.files.css) { %>
+  <link href="<%= htmlWebpackPlugin.files.css[index] %>" rel="stylesheet" />
+  <% } %>
 </head>
 <body>
+  <noscript>You need to enable JavaScript in your browswer</noscript>
   <div id="root"></div>
-  <script src="./main.js"></script>
+
+  <!-- js scripts -->
+  <% for (var index in htmlWebpackPlugin.files.js) { %>
+  <script src="<%= htmlWebpackPlugin.files.js[index] %>"></script>
+  <% } %>
+
 </body>
 </html>
