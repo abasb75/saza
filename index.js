@@ -108,7 +108,7 @@ console.log('Please wait!');
 console.log('installing react ...');
 execCommand(`cd ${appName} && npm i react react-dom`);
 console.log('installing webpack ...');
-execCommand(`cd ${appName} && npm i --save-dev webpack webpack-cli webpack-dev-server css-loader html-webpack-plugin mini-css-extract-plugin copy-webpack-plugin @svgr/webpack`);
+execCommand(`cd ${appName} && npm i --save-dev webpack webpack-cli webpack-dev-server css-loader html-webpack-plugin mini-css-extract-plugin copy-webpack-plugin @svgr/webpack url-loader`);
 console.log('installing eslint ...');
 execCommand(`cd ${appName} && npm i --save-dev eslint eslint-config-airbnb-base eslint-plugin-jest eslint-config-prettier`);
 console.log('installing path ...');
@@ -130,6 +130,7 @@ if(isTypecriptApp){
     execCommand(`cd ${appName} && npm i --save-dev @babel/preset-typescript`);
     
 }
+
 
 
 console.log(`${appName} app created successfully`);
