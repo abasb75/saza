@@ -24,6 +24,7 @@ module.exports = {
             exclude: /node_modules/,
             resolve: {
                extensions: [".ts", ".tsx", ".js" , ".jsx", ".json"],
+               mainFields: [ 'main' , 'module' ],
             },
             exclude: /node_modules/,
             use: [
@@ -50,6 +51,7 @@ module.exports = {
             exclude: /node_modules/,
             resolve: {
                extensions: [ ".js" , ".jsx",".ts" , ".tsx", ".json"],
+               mainFields: [ 'main' , 'module' ],
             },
             use: {
             loader: 'babel-loader',
